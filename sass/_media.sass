@@ -1,0 +1,58 @@
+@media screen and ( max-width: 767px)
+    .nav
+        position: fixed
+        width: 100%
+        min-height: 50px
+        z-index: 50
+        padding-top: 10px
+        &__list
+            position: fixed
+            z-index: 2
+            flex-direction: column
+            justify-content: center
+            top: 0
+            left: -100%
+            width: 80%
+            height: 100vh
+            padding: 20px 15px
+            margin: 0
+            background-color: rgba(255, 255, 255, .9)
+            transition: 0.5s all
+            &_active
+                left: 0
+        &__item
+            width: 100%
+        li:nth-child(4), li:nth-child(5)
+            display: block
+        &__link
+            display: block
+            text-align: center
+            font-size: 24px
+            padding: 30px 0
+        .logo
+            order: 1
+        .phone
+            order: 2
+
+        .hamburger
+            order: 3
+            display: block
+            width: 46px
+            height: 38px
+            padding: 10px
+            span
+                display: block
+                height: 3px
+                width: 100%
+                background-color: #E8C300
+                margin-bottom: 3px
+                transition: 0.5s all
+            &-active
+                span
+                    margin-bottom: -3px
+                    &:nth-child(1)
+                        transform: translateY(3px) rotate(-45deg)
+                    &:nth-child(2)
+                        display: none
+                    &:nth-child(3)
+                        transform: translateY(3px) rotate(45deg)

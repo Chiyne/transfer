@@ -1,0 +1,133 @@
+body
+	font-family: 'Raleway', sans-serif
+	font-weight: normal
+	font-size: clamp(14px, 4vw, 20px)
+	line-height: 180%
+
+img
+	max-width: 100%
+	height: auto
+a
+	text-decoration: none
+	font-size: inherit
+	color: inherit
+	padding: 5px
+	white-space: nowrap
+
+.container
+	width: 100%
+	max-width: 1560px
+	padding: clamp(2rem, 10vmin, 10rem) clamp(10px, 8vmin, 10rem)
+	margin: auto
+
+.logo
+	font-family: 'Courgette', cursive
+	font-size: 30px
+
+.header
+	position: fixed
+	top: 0px
+	left: 0px
+	width: 100%
+	color: #ffffff
+
+.nav
+	max-width: 1240px
+	padding: 0 20px
+	margin: 0 auto
+	display: flex
+	justify-content: space-between
+	align-content: center
+	padding-top: 36px
+	font-size: 16px
+	&__list
+		display: flex
+		justify-content: space-between
+		align-content: baseline
+		flex-wrap: wrap
+	&__link
+		display: block
+		margin: 5px 10px
+		padding: 0 5px
+.hamburger
+	display: none
+
+.title
+	font-family: 'Kaushan Script', cursive
+	font-size: 80px
+	line-height: 116px
+	width: 100%
+	max-width: 950px
+	margin: 0 auto 40px
+
+.sabtitle
+	font-size: 50px
+	line-height: 130%
+
+.nowrap
+	white-space: nowrap
+
+.promo
+	background: #056b0a url(../img/promo.png) no-repeat center/cover
+	color: #ffffff
+	&__container
+		display: flex
+		flex-direction: column
+		justify-content: center
+		padding-top: 100px
+		padding-bottom: 45px
+		height: 100vh
+		text-align: center
+
+.continue
+	position: absolute
+	bottom: 45px
+	left: 0
+	right: 0
+	padding: 0
+	margin: 0 auto
+	font-size: 14px
+	&__down
+		display: block
+		font-size: 20px
+
+.section__container
+	display: grid
+	grid-template-columns: 1fr 1fr
+	grid-column-gap: clamp(1rem, 3vw, 80px)
+	grid-row-gap: clamp(1rem, 3vh, 40px)
+	grid-auto-flow: dense
+
+
+.picture
+	grid-row: span 3
+
+.btn
+	width: 264px
+	height: 60px
+	border-radius: 100% 10%
+	text-align: center
+	font-weight: 500
+	font-size: 25px
+	line-height: 50px
+	background-color: #28a745
+	color: #ffffff
+
+.footer
+	background: #064109 url(../img/promo.png) no-repeat bottom/cover
+	color: #ffffff
+	&__container
+		display: flex
+		justify-content: space-between
+		align-items: start
+	&__item
+		max-width: 174px
+		&_contacts
+			max-width: 185px
+	&__title
+		font-size: 25px
+		margin-bottom: 24px
+	.logo__caption
+		font-size: 16px
+		line-height: 1.25rem
+		margin-top: 24px
